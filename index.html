@@ -106,22 +106,36 @@
         footer p {
             font-size: 14px;
         }
-        /* Profile Picture Styling */
-        .profile-pic {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 250px;  /* Adjust the size as needed */
-            border-radius: 10px;  /* Add a rounded look */
-            margin-bottom: 20px; /* Adds space below the image */
+        /* Flexbox container to position the content and image side by side */
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Ensures space between text and image */
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
         }
-        /* Responsive Styling */
+
+        /* Card styling remains unchanged */
+        .card {
+            flex: 1; /* Ensures the card takes up available space */
+            padding-right: 20px; /* Adds space between the text and image */
+        }
+
+        /* Profile Picture Styling - Updated to make it rounded and align it */
+        .profile-pic {
+            width: 250px;  /* Adjust the size as needed */
+            border-radius: 50%;  /* Makes the image rounded */
+            margin-left: 20px; /* Adds space between the image and text */
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Adds shadow to the image */
+        }
+
+        /* Responsive Styling for smaller screens */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
+            .about-container {
+                flex-direction: column; /* Stacks the text and image on smaller screens */
             }
-            nav a {
-                font-size: 16px;
+            .profile-pic {
+                margin-left: 0;
+                margin-top: 20px; /* Adds space between text and image when stacked */
             }
         }
     </style>
@@ -145,13 +159,15 @@
         <!-- About Section -->
         <div id="about" class="section">
             <h2 class="section-title">About Me</h2>
-            <img src="20240922_185503.jpg" alt="Priyansh Mishra" class="profile-pic"> <!-- Your Image -->
-            <div class="card">
-                <p>I’m a first-year student, a passionate learner, constantly seeking opportunities to expand my knowledge, whether it's in coding, problem-solving, or understanding new technologies. Currently, I’m applying for recruitment to <strong>SRMKZILLA</strong>, one of the top technical clubs in my college, where I hope to grow and contribute to the best of my abilities.</p>
+            <div class="about-container">
+                <div class="card">
+                    <p>I’m a first-year student, a passionate learner, constantly seeking opportunities to expand my knowledge, whether it's in coding, problem-solving, or understanding new technologies. Currently, I’m applying for recruitment to <strong>SRMKZILLA</strong>, one of the top technical clubs in my college, where I hope to grow and contribute to the best of my abilities.</p>
 
-                <p>Although my leadership experience isn’t in the technical field, I bring strong organizational skills, dedication, and a hardworking attitude. Joining SRMKZILLA would give me the chance to learn from the best and contribute to the team with focus and reliability.</p>
+                    <p>Although my leadership experience isn’t in the technical field, I bring strong organizational skills, dedication, and a hardworking attitude. Joining SRMKZILLA would give me the chance to learn from the best and contribute to the team with focus and reliability.</p>
 
-                <p>My immediate goal is to enhance my coding and technical knowledge, while my long-term ambition is to secure a top position and a rewarding career in the tech industry.</p>
+                    <p>My immediate goal is to enhance my coding and technical knowledge, while my long-term ambition is to secure a top position and a rewarding career in the tech industry.</p>
+                </div>
+                <img src="20240922_185503.jpg" alt="Priyansh Mishra" class="profile-pic"> <!-- Replace 'your-image-name.jpg' with your actual image file name -->
             </div>
         </div>
 
