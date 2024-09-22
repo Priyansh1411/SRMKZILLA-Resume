@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Priyansh Mishra - Resume</title>
+    <style>
+        /* Base styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        nav {
+            position: fixed;
+            width: 100%;
+            background-color: #444;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 100;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #d4af37; /* Classy gold hover effect */
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 100px 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+            font-size: 3em;
+            margin-bottom: 5px; /* Reduced space below name */
+            font-family: 'Playfair Display', serif;
+        }
+        .club-name {
+            text-align: center;
+            font-size: 1.2em; /* Made SRMKZILLA smaller */
+            margin-top: 2px; /* Reduced space between name and SRMKZILLA */
+            background: linear-gradient(to right, #ff7f50, #1e90ff); /* Blue and orange mix */
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .section {
+            margin-bottom: 60px;
+        }
+        .section-title {
+            font-size: 26px;
+            color: #d4af37; /* Classy gold color */
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #d4af37;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        .card p, .card ul li {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+        }
+        .card ul {
+            margin-left: 20px;
+        }
+        .contact-details p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #444;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer p {
+            font-size: 14px;
+        }
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            nav a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1>Priyansh Mishra</h1>
+        <p class="club-name">SRMKZILLA</p>
+
+        <!-- About Section -->
+        <div id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <p>I’m a first-year student, a passionate learner, constantly seeking opportunities to expand my knowledge, whether it's in coding, problem-solving, or understanding new technologies. Currently, I’m applying for recruitment to <strong>SRMKZILLA</strong>, one of the top technical clubs in my college, where I hope to grow and contribute to the best of my abilities.</p>
+
+                <p>Although my leadership experience isn’t in the technical field, I bring strong organizational skills, dedication, and a hardworking attitude. Joining SRMKZILLA would give me the chance to learn from the best and contribute to the team with focus and reliability.</p>
+
+                <p>My immediate goal is to enhance my coding and technical knowledge, while my long-term ambition is to secure a top position and a rewarding career in the tech industry.</p>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="card">
+                <p><strong>Schooling</strong></p>
+                <p>Army Public School, Ramgarh Cantt, Jharkhand</p>
+            </div>
+            <div class="card">
+                <p><strong>Bachelor of Technology in Computer Science</strong></p>
+                <p>SRM Institute of Science And Technology - Kattankulathur</p>
+                <p>1st Year</p>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="card">
+                <p><strong>Headboy - Army Public School, Ramgarh Cantt, Jharkhand</strong></p>
+                <p>As Headboy, I led a team of students to organize various school events, improve student engagement, and manage day-to-day student activities. This role helped me develop leadership, communication, and organizational skills, which I aim to bring to technical projects and team collaborations in the club.</p>
+            </div>
+            <div class="card">
+                <p><strong>Personal Coding Exploration</strong></p>
+                <p>Currently focused on building a strong foundation in C programming, Python, and SQL, with ongoing self-directed projects aimed at strengthening problem-solving skills.</p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="card">
+                <ul>
+                    <li><strong>Programming Languages:</strong> Python, C (Basics), SQL</li>
+                    <li><strong>Learning Focus:</strong> Developing a strong foundation in coding, focusing on understanding algorithms and solving problems efficiently</li>
+                    <li><strong>Leadership:</strong> Strong leadership and communication skills</li>
+                    <li><strong>Problem-Solving:</strong> Enthusiastic about learning coding, tackling challenges, and improving problem-solving abilities</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="section">
+            <h2 class="section-title">Contact Details</h2>
+            <div class="card contact-details">
+                <p><strong>Email:</strong> pm7984@srmist.edu.in</p>
+                <p><strong>Phone:</strong> 8521190809</p>
+                <p><strong>College ID:</strong> RA2411003010618</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Priyansh Mishra. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
